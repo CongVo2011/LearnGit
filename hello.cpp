@@ -4,5 +4,3 @@ update at branch feature2
 git commit --amend --no-edit
 update change don't add the commit
 git fetch
-
-
