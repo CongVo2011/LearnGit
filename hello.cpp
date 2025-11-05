@@ -5,3 +5,4 @@ git commit --amend --no-edit
 update change don't add the commit
 git fetch
 update for git reset hard
+update 2025/11/03 10:52
