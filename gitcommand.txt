@@ -60,4 +60,6 @@ Checkout bmw_rse27_release:
        git checkout bmw_rse27_release
        git fetch vgit_na bmw_rse27_release
        git reset --hard vgit_na /bmw_rse27_release
-git branch -v 
+git branch --move bad-branch-name corrected-branch-name
+git push --set-upstream origin corrected-branch-name
+git push origin --delete bad-branch-name
