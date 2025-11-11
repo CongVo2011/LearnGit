@@ -60,3 +60,4 @@ Checkout bmw_rse27_release:
        git checkout bmw_rse27_release
        git fetch vgit_na bmw_rse27_release
        git reset --hard vgit_na /bmw_rse27_release
+git branch -v 
