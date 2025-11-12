@@ -64,3 +64,5 @@ git branch --move bad-branch-name corrected-branch-name
 git push --set-upstream origin corrected-branch-name
 git push origin --delete bad-branch-name
 git remote show origin
+git branch --vv: very verbose
+git fetch --all: fetch all branchs from remote
