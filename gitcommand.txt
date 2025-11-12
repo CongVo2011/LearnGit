@@ -21,7 +21,7 @@ Git diff commit_id: So sanh khac nhau giua commit va all changes hien tai
 Git diff commit1 commit2: So sanh khac nhau giua 2 comit
 Git diff commit1 commit2 > file.patch
 Git apply file.patch
-Git clean -fd : Xoa file chua duoc theo doi
+Git clean -fd : force directories Xoa file chua duoc theo doi
 Git checkout -- .: Bo all changes trong working tree
 Git reset: Staged -> Working
 Git reset origin/main
@@ -29,10 +29,10 @@ Git reset --soft HEAD~1
 Git reset --hard: Staged -> delete
 Git reset --hard HEAD~1
 Git remote
-Git remote -v
+Git remote -v: verbose
 Git remote show origin
 Git branch
-Git branch -v
+Git branch -v: verbose
 Git branch name
 git branch --merged
 git branch --no-merged
@@ -63,3 +63,4 @@ Checkout bmw_rse27_release:
 git branch --move bad-branch-name corrected-branch-name
 git push --set-upstream origin corrected-branch-name
 git push origin --delete bad-branch-name
+git remote show origin
