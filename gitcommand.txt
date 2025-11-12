@@ -70,3 +70,4 @@ git rebase main: rebase main into current branch
 git rebase --continue: after fix conflict
 git rebase --abort: get back to the state before rebase
 git rebase --skip: instead skip this commit
+git rm file_name
