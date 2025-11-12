@@ -66,3 +66,5 @@ git push origin --delete bad-branch-name
 git remote show origin
 git branch --vv: very verbose
 git fetch --all: fetch all branchs from remote
+git rebase main: rebase main into current branch
+git rebase --continue: after fix conflict
