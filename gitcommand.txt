@@ -71,3 +71,5 @@ git rebase --continue: after fix conflict
 git rebase --abort: get back to the state before rebase
 git rebase --skip: instead skip this commit
 git rm file_name
+git mv file1 file2: rename file1 -> file2
+git mv file folder: move file to folder
