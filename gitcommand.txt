@@ -1,81 +1,78 @@
-Git clone remote. 
-Git checkout bmw_rse27_release
-Git fetch or git fetch origin main
-Git pull (git fetch + git merge) or git pull origin main
-Git reset --hard origin/main
-Git add . (git add file_name)
-Git commit
-Git commit --amend
-Git commit --amend --no-edit
-Git push origin main(git push vgit_na HEAD:refs/for/bmw_rse27_release)
-Git revert commit
-Git log --oneline : See history in current branch
-Git log --oneline feature1: See history in feature1 branch
-Git log --oneline -p -2: Xem patch cho 2 commit gan nhat(~ git diff)
-git log --oneline origin/main: See history of remote branch
-Git log --oneline --no-merges: Don’t show merged commit
-Git branch -a --contains 0d60a09: Xac dinh commit nam trong branch nao. (-a all, -r remote, khong co la local)
-Git checkout commid_id: Chuyen den commit muon su dung
-Git cherry-pick commit_id: Them 1 commit den vi tri HEAD
-Git diff commit_id: So sanh khac nhau giua commit va all changes hien tai
-Git diff commit1 commit2: So sanh khac nhau giua 2 comit
-Git diff commit1 commit2 > file.patch
-Git apply file.patch
-Git clean -fd : force directories Xoa file chua duoc theo doi
-Git checkout -- .: Bo all changes trong working tree
-Git reset: Staged -> Working
-Git reset origin/main
-Git reset --soft HEAD~1
-Git reset --hard: Staged -> delete
-Git reset --hard HEAD~1
-Git remote
-Git remote -v: verbose
-Git remote show origin
-Git branch
-Git branch -v: verbose
-Git branch name
+git add . (git add file_name)
+git apply file.patch
+git blame file
+git branch
+git branch -a --contains 0d60a09: Xac dinh commit nam trong branch nao. (-a all, -r remote, khong co la local)
+git branch -d branch: -D delete branch has not merged
 git branch --merged
+git branch --move bad-branch-name corrected-branch-name
+git branch name
 git branch --no-merged
 git branch --no-merged branch
-Git branch -d branch: -D delete branch has not merged
-Git checkout branch_name
-Git merge branch
-Git push origin --delete branch: don't use origin/branch only branch
-
-
+git branch -v: verbose
+git branch --vv: very verbose
+git checkout -- .: Bo all changes trong working tree
+git checkout bmw_rse27_release
+git checkout branch_name
+git checkout commid_id: Chuyen den commit muon su dung
+git cherry-pick commit_id: Them 1 commit den vi tri HEAD
+git clean -fd : force directories Xoa file chua duoc theo doi
+git clone remote.
+git commit
+git commit --amend
+git commit --amend --no-edit
+git diff commit_id: So sanh khac nhau giua commit va all changes hien tai
+git diff commit1 commit2 > file.patch
+git diff commit1 commit2: So sanh khac nhau giua 2 comit
+git fetch --all: fetch all branchs from remote
+git fetch or git fetch origin main
+git log --oneline : See history in current branch
+git log --oneline feature1: See history in feature1 branch
+git log --oneline --no-merges: Don’t show merged commit
+git log --oneline origin/main: See history of remote branch
+git log --oneline -p -2: Xem patch cho 2 commit gan nhat(~ git diff)
+git merge branch
+git mv file folder: move file to folder
+git mv file1 file2: rename file1 -> file2
+git pull (git fetch + git merge) or git pull origin main
+git push origin --delete bad-branch-name
+git push origin --delete branch: don't use origin/branch only branch
+git push origin main(git push vgit_na HEAD:refs/for/bmw_rse27_release)
+git push --set-upstream origin corrected-branch-name
+git rebase --abort: get back to the state before rebase
+git rebase --continue: after fix conflict
+git rebase main: rebase main into current branch
+git rebase --skip: instead skip this commit
+git remote
+git remote show origin
+git remote -v: verbose
+git reset --hard HEAD~1
+git reset --hard origin/main
+git reset --hard: Staged -> delete
+git reset origin/main
+git reset --soft HEAD~1
+git reset: Staged -> Working
+git revert commit
+git rm file_name
+git stash
+git stash clear
+git stash list
+git stash pop
+git stash show -p
 Create patch the changes:
-	git init
-	git add .
-	update the source code
-	git diff file > file.patch
-	git apply --check file.patch
-	git apply file.patch
-	git apply --reverse file.patch
-Create patch from commit
-	git format-patch commitId -> gen 0001*.patch
-	git reset --hard HEAD~1
-	git am 0001*.patch(restore reset hard)
-	git apply --reverse file.patch
+        git init
+        git add .
+        update the source code
+        git diff file > file.patch
+        git apply --check file.patch
+        git apply file.patch
+        git apply --reverse file.patch
+Create patch from commit:
+ git format-patch commitId -> gen 0001*.patch
+        git reset --hard HEAD~1
+        git am 0001*.patch(restore reset hard)
+        git apply --reverse file.patch
 Checkout bmw_rse27_release:
        git checkout bmw_rse27_release
        git fetch vgit_na bmw_rse27_release
        git reset --hard vgit_na /bmw_rse27_release
-git branch --move bad-branch-name corrected-branch-name
-git push --set-upstream origin corrected-branch-name
-git push origin --delete bad-branch-name
-git remote show origin
-git branch --vv: very verbose
-git fetch --all: fetch all branchs from remote
-git rebase main: rebase main into current branch
-git rebase --continue: after fix conflict
-git rebase --abort: get back to the state before rebase
-git rebase --skip: instead skip this commit
-git rm file_name
-git mv file1 file2: rename file1 -> file2
-git mv file folder: move file to folder
-git stash
-git stash pop
-git stash list
-git stash show -p
-git stash clear
-git blame file
