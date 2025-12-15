@@ -1,8 +1,0 @@
-Create file 1
-Please update information for this file. 
-Description detail for it
-Thank you so much!
-update 2025/11/03 11:00
-git rebase in main
-[main branch] update
-git stash
