@@ -1,0 +1,23 @@
+ls -lahR (long, all, human-readable, recursive)
+cp -rav src dst (recursive, archive, verbose)
+mv -vf a b (move rename: verbose, force)
+rm -rf dir (recursive, force)
+mkdir -p a/b/c (parent)
+chmod -R 755 dir (recursive)
+chown -R user:group dir (recursive)
+find . -name "*.c"
+find / -type f (type f or d)
+grep -rni error . (recursive, number, ignore-case)
+du -sh dir (disk usage: summary, duman-readable)
+df -h (disk free: human-readable)
+head -n 10 file (number)
+tail -f log.txt (follow)
+cmd > out.txt (override)
+cmd >> out.txt (append)
+cmd 2> err.txt (stderr(fd 2))
+diff a.txt b.txt
+diff -u a b (unified format as git diff)
+sort file.txt (sort AZ)
+uniq file.txt (unique: rm duplication line sat nhau)
+sort file.txt | uniq -cdui (count, duplicate, unique, ignore case)
+
