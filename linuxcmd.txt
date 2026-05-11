@@ -23,3 +23,4 @@ sort file.txt | uniq -cdui (count, duplicate, unique, ignore case)
 hello world
 
 the line is added to confirm rebase
+Hello world 2
