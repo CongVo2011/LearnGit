@@ -20,4 +20,4 @@ diff -u a b (unified format as git diff)
 sort file.txt (sort AZ)
 uniq file.txt (unique: rm duplication line sat nhau)
 sort file.txt | uniq -cdui (count, duplicate, unique, ignore case)
-
+hello world
